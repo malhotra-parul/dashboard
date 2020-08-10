@@ -7,7 +7,7 @@
 .App {
   text-align: center;
   display: grid;
-  grid-template: 60px 20px 1fr / 250px 20px 4fr 20px;
+  grid-template: 60px 20px 750px / 250px 20px 4fr 20px;
 }
 
 .header{
@@ -15,13 +15,16 @@
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 250px 1fr ;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .sidebar{
-  grid-row: 1/-1;
+  grid-row: 2/-1;
   grid-column: 1/2;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: grid;
+  grid-template-rows: 205px 295px 250px;
 }
 
 .content{
@@ -35,4 +38,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+}
+
+.profile{
+  grid-row: 1;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.online{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.picture{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  object-fit: scale-down;
 }
