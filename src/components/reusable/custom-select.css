@@ -1,0 +1,57 @@
+.select-holder{
+    position: relative;
+    min-width: 200px ;
+   
+    /* float: left; */
+  }
+  
+  .select-holder::after{
+  content: "◀ ▶";
+  font-size: 10px;
+  position: absolute;
+  top: 12px;
+  left: 145px;
+  transform: rotate(90deg);
+  pointer-events: none;
+  color:	rgb(140, 151, 172);
+  }
+  
+  select::-ms-expand {
+    display: none;
+    }
+  
+  .select-holder > select{
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* display: block; */
+    width: 100%;
+    max-width: 140px;
+    height: 40px;
+    /* float: right; */
+    /* margin: 5px 0px; */
+    padding: 5px 30px;
+    font-size: 14px;
+    line-height: 2.05;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid;
+    border-color: rgb(181, 188, 215);
+    border-radius: 5px;
+    word-spacing: 10px;
+    /* -ms-word-break: normal;
+    word-break: normal; */
+  }
+  
+  
+  .select-holder > select:focus{
+    outline: none;
+    }
+  
+    .select-holder > select:hover,
+    .select-holder > select:active {
+      border-color: rgb(120, 106, 244);
+  animation: border-color 0.5s ease-in-out;
+    }
