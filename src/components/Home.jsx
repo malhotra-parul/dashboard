@@ -4,7 +4,7 @@ import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
 function Home() {
     return (
        <>
-        <HomeTwoToneIcon style={{margin: "auto"}}/>
+        <HomeTwoToneIcon style={{margin: "auto"}} color="primary"/>
        </>
     )
 }
