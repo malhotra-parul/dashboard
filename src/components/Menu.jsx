@@ -24,8 +24,14 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
   },
   nested: {
-    padding: 0,
+    paddingBottom: theme.spacing(0.1),
     paddingLeft: theme.spacing(12),
+    color: theme.palette.secondary.main,
+    fontSize: "16px",
+    "&:hover":{
+      animation: 'color 0.2s ease-in-out',
+      color: theme.palette.primary.main,
+    }
   },
   items: {
     padding: "0",
@@ -33,16 +39,29 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(4),
   },
   listItemText: {
-    fontSize: "14px", //Insert your required size
+    fontSize: "14px",
+    color: theme.palette.secondary.main,
+    "&:hover":{
+      animation: 'color 0.2s ease-in-out',
+      color: theme.palette.primary.main
+    }
   
   },
   menuItemText: {
     fontWeight: theme.typography.fontWeightBold,
     fontSize: "16px",
+    "&:hover":{
+      animation: 'color 0.2s ease-in-out',
+      color: theme.palette.primary.main
+    }
   },
   menu: {
     paddingLeft: theme.spacing(4),
   },
+  subheader: {
+    color: theme.palette.secondary.main,
+    fontWeight: theme.typography.fontWeightBold
+  }
 }));
 
 export default function Menu() {
@@ -65,7 +84,7 @@ export default function Menu() {
             primary="Dashboard"
             classes={{ primary: classes.menuItemText }}
           />
-          {open ? <ExpandMore /> : <ExpandLess />}
+          {open ? <ExpandMore color="primary" /> : <ExpandLess color="primary" />}
         </ListItem>
         <Collapse in={open} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
@@ -83,7 +102,7 @@ export default function Menu() {
         <Divider variant="middle" />
         <ListItem button className={classes.menu}>
           <ListItemIcon>
-            <TodayOutlinedIcon color="primary"/>
+            <TodayOutlinedIcon color="primary" />
           </ListItemIcon>
           <ListItemText
             primary="Calendar"
@@ -126,7 +145,7 @@ export default function Menu() {
       <List
         component="nav"
         subheader={
-          <ListSubheader component="div" id="nested-list-subheader">
+          <ListSubheader component="div" className={classes.subheader}>
             RECENTLY VIEWED
           </ListSubheader>
         }
@@ -145,6 +164,7 @@ export default function Menu() {
           <ListItemText
             classes={{ primary: classes.listItemText }}
             primary="Invoice #940"
+            color="secondary"
           />
           <ListItemSecondaryAction>
             <ArrowRightAltOutlinedIcon color="secondary"/>

@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import "./custom-select.css";
 
-function CustomSelect({ data }) {
+function CustomSelect( props ) {
 
+    const { data, setMonth, setYear } = props;
     const [ inputOptions ] = useState(data);
     const [ selectedOption, setSelectedOption ] = useState("");
+   
+
     const changeSelected = (event) => {
         setSelectedOption(event.target.value);
+        if (props.setMonth){
+            setMonth(event.target.value);
+        }
+        if (props.setYear){
+            setYear(event.target.value);
+        }
     }
 
     const options = inputOptions.map(option => <option key={option.id} value={option.id}>
