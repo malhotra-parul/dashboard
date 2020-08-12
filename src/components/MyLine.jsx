@@ -42,6 +42,15 @@ const MyLine = ({ color }) => {
         options={{
           responsive: true,
           maintainAspectRatio: false,
+          tooltips: {
+            titleAlign: "center",
+              caretPadding: 5,
+              cornerRadius: 5,
+              xPadding: 20,
+              position: "nearest",
+              bodyAlign: "center",
+              bodyFontStyle: "bold",
+          },
           scales: {
             yAxes: [
               {

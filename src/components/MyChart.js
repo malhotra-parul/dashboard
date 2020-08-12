@@ -47,6 +47,12 @@ return (
               beginAtZero: true,
               display: false
              }
+              }], 
+              xAxes: [{
+                gridLines: {
+                  display: false,
+                  
+                }
               }]
             },
             legend:{
