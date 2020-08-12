@@ -54,14 +54,21 @@ return (
               backgroundColor: 'rgb(255, 255, 255)',
               borderColor: 'rgb(156, 174, 211)',
               borderWidth: 1,
-              caretPadding: 5,
+              titleFontColor: "#5f5b66",
+              titleAlign: "center",
+              caretPadding: 15,
               cornerRadius: 5,
               xPadding: 15,
               position: 'nearest',
               bodyAlign: "center",
-              yPadding: 4,
+              bodyFontStyle: "bold",
+              yPadding: 20,
               callbacks: {
-                  
+                title: function(tooltipItem, data) {
+                    return (
+                      `12th ${month} ${year}`.toLocaleString("en-US")
+                    );
+                  },
                   labelTextColor: function(tooltipItem, chart) {
                       return '#000';
                   }
