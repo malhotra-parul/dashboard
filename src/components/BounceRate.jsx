@@ -6,6 +6,8 @@ function BounceRate() {
     const borderColor = "rgb(120, 106, 244)";
     const backgroundColor = "rgb(239, 239, 254)";
     const color = { borderColor, backgroundColor };
+    const height = "100px";
+    const width = "220px";
 
   return (
     <div className="bounce-rate">
@@ -23,7 +25,7 @@ function BounceRate() {
       >
         +12.2% <LaunchIcon fontSize="large" style={{ paddingLeft: "10px" }} />
       </p>
-      <MyLine color={color}/>
+      <MyLine color={color} height={height} width={width} />
     </div>
   );
 }

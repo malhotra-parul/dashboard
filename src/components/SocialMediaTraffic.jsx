@@ -2,8 +2,8 @@ import React from "react";
 import ProgressBar from "./ProgressBar";
 
 function SocialMediaTraffic() {
-  const style = { fontWeight: "700", color: "#5f5b66" };
-  const color = { color: "#5f5b66", fontWeight: "600" };
+  const style = { fontWeight: "700", color: "#5f5b66", fontSize: "14px" };
+  const color = { color: "#5f5b66", fontWeight: "600", fontSize: "13px", padding: "15px 0" };
   const tableData = { fontWeight: "600", color: "#5f5b66" };
 
   return (

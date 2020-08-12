@@ -6,6 +6,8 @@ function TotalVisits() {
     const borderColor = "rgb(117, 198, 130)";
     const backgroundColor = "rgb(215, 238, 220)";
     const color = { borderColor, backgroundColor };
+    const height = "100px";
+    const width = "220px";
 
   return (
     <div className="total-visits">
@@ -27,7 +29,7 @@ function TotalVisits() {
           style={{ paddingRight: "10px", transform: "rotate(180deg)" }}
         />
       </p>
-      <MyLine color={color}/>
+      <MyLine color={color} height={height} width={width} />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Line } from "react-chartjs-2";
 
-const MyLine = ({ color }) => {
+const MyLine = ({ color, height, width }) => {
   const [data, setData] = useState({});
   const backgroundColor = color.backgroundColor;
   const borderColor = color.borderColor; 
@@ -36,7 +36,7 @@ const MyLine = ({ color }) => {
   }, []);
 
   return (
-    <div style={{ height: "100px", width: "220px" }}>
+    <div style={{ height: height , width: width }}>
       <Line
         data={data}
         options={{

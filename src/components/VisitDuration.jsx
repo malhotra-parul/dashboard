@@ -6,6 +6,8 @@ function VisitDuration() {
     const borderColor = "rgb(251, 219, 123)";
     const backgroundColor = "rgb(254, 250, 239)";
     const color = { borderColor, backgroundColor };
+    const height = "100px";
+    const width = "220px";
 
   return (
     <div className="visit-duration">
@@ -23,7 +25,7 @@ function VisitDuration() {
       >
         +19.6% <LaunchIcon fontSize="large" style={{ paddingLeft: "10px" }} />
       </p>
-      <MyLine color={color} />
+      <MyLine color={color} height={height} width={width} />
     </div>
   );
 }
