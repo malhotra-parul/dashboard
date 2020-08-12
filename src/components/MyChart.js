@@ -12,7 +12,7 @@ const MyChart = ({ month, year }) => {
   datasets: [
     {
       label: ' Visitors',
-      barThickness: "8",
+      barThickness: "9",
       backgroundColor: 'rgb(31, 110, 215)',
       hoverBackgroundColor: '#1a5199',
       minBarLength: 1,
@@ -25,6 +25,8 @@ const MyChart = ({ month, year }) => {
 useEffect(() => {
   chart()
 }, [])
+
+
   
 return (
     <div style={{position: 'relative', height: "250px", width: "90%", margin: "0 auto"}}>
@@ -58,17 +60,27 @@ return (
               titleAlign: "center",
               caretPadding: 15,
               cornerRadius: 5,
-              xPadding: 15,
-              position: 'nearest',
+              xPadding: 20,
+              position: "nearest",
               bodyAlign: "center",
               bodyFontStyle: "bold",
               yPadding: 20,
               callbacks: {
                 title: function(tooltipItem, data) {
+                 
                     return (
-                      `12th ${month} ${year}`.toLocaleString("en-US")
+        `${ data.labels[tooltipItem[0].index].toLocaleString("en-US") } ${month} ${year}`.toLocaleString("en-US")
                     );
                   },
+                  label: function(tooltipItem, data) {
+                    var label = data.datasets[tooltipItem.datasetIndex].label || '';
+
+                    if (label) {
+                        label += ': ';
+                    }
+                    label += Math.round(tooltipItem.yLabel * 100) / 100;
+                    return label;
+                },
                   labelTextColor: function(tooltipItem, chart) {
                       return '#000';
                   }
