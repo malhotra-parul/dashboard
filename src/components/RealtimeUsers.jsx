@@ -13,7 +13,7 @@ function RealtimeUsers() {
       <p style={{ fontSize: "12px", color: "#5f5b66", fontWeight: "600" }}>
         REALTIME USERS
       </p>
-      <p style={{ fontSize: "36px" }}>56</p>
+      <p style={{ fontSize: "29px", color: "#535457" }}>56</p>
       <p
         style={{
           color: "green",

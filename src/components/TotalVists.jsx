@@ -14,7 +14,7 @@ function TotalVisits() {
       <p style={{ fontSize: "12px", color: "#5f5b66", fontWeight: "600" }}>
         TOTAL VISITS
       </p>
-      <p style={{ fontSize: "34px" }}>54,598</p>
+      <p style={{ fontSize: "28px", color: "#535457" }}>54,598</p>
       <p
         style={{
           color: "red",

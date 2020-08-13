@@ -29,7 +29,7 @@ useEffect(() => {
 
   
 return (
-    <div style={{position: 'relative', height: "250px", width: "90%", margin: "0 auto"}}>
+    <div style={{position: 'relative', height: "250px", width: "90%", margin: "0 auto", filter: 'drop-shadow(0 0 0.35rem #ddddf0)'}}>
         <Bar
           data={chartData}
           options={{

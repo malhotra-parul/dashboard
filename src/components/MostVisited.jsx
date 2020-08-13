@@ -16,7 +16,7 @@ function MostVisited() {
     return (
         <div className="most-visited">
             <header className="most-visited-header">
-                <span>Most Visited Pages</span>
+                <span style={{filter: 'drop-shadow(0 0 0.25rem #eeeae9)', color: "#535457"}}>Most Visited Pages</span>
             </header>
             <div className="most-visited-table">
                 <span style={colorStyle}><strong>PAGE NAME</strong></span>

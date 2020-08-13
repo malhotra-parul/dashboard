@@ -9,7 +9,7 @@ function SocialMediaTraffic() {
   return (
     <div className="social-media">
       <header className="social-media-header">
-        <span>Social Media Traffic</span>
+        <span style={{filter: 'drop-shadow(0 0 0.25rem #eeeae9)', color: "#535457"}}>Social Media Traffic</span>
       </header>
       <div className="social-media-table">
         <span style={color}>

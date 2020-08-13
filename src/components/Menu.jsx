@@ -49,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuItemText: {
     fontWeight: theme.typography.fontWeightBold,
+    color: theme.palette.primary.light,
     fontSize: "16px",
     "&:hover":{
       animation: 'color 0.2s ease-in-out',

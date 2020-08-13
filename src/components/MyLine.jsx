@@ -36,7 +36,7 @@ const MyLine = ({ color, height, width }) => {
   }, []);
 
   return (
-    <div style={{ height: height , width: width }}>
+    <div style={{ height: height , width: width, filter: 'drop-shadow(0 0 0.25rem #d8d8e2)' }}>
       <Line
         data={data}
         options={{

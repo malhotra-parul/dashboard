@@ -14,7 +14,7 @@ function BounceRate() {
       <p style={{ fontSize: "12px", color: "#5f5b66", fontWeight: "600" }}>
         BOUNCE RATE
       </p>
-      <p style={{ fontSize: "34px" }}>73.67%</p>
+      <p style={{ fontSize: "28px", color: "#535457" }}>73.67%</p>
       <p
         style={{
           color: "green",

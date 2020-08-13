@@ -58,15 +58,17 @@ function DailyVisitors() {
             <header style={{display: "flex", 
             justifyContent: "space-between", 
             alignItems: "center", 
-            padding: "1em"}}>
-                <h4>Daily Visitors</h4>
+            padding: "1em",
+            borderBottom: "1px solid #ddddf0"}}>
+                <p style={{filter: 'drop-shadow(0 0 0.25rem #eeeae9)', fontSize: '16px',
+  fontWeight: '600', color: "#535457"}}>Daily Visitors</p>
                 <div style={{display: "flex", justifyContent: "flex-end"}}>
                     <CustomSelect style={{paddingRight: "0"}} data={data_1} setMonth={setMonth}/>
                     <CustomSelect style={{paddingLeft: "0"}} data={data_2} setYear={setYear} />
                 </div>
             </header>
 
-            <hr />    
+             
             <MyChart month={monthValue} year={yearValue}/>
   
          

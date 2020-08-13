@@ -14,7 +14,7 @@ function VisitDuration() {
       <p style={{ fontSize: "12px", color: "#5f5b66", fontWeight: "600" }}>
         VISIT DURATION
       </p>
-      <p style={{ fontSize: "34px" }}>1m 4s</p>
+      <p style={{ fontSize: "28px", color: "#535457" }}>1m 4s</p>
       <p
         style={{
           color: "green",
