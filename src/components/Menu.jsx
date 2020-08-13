@@ -5,6 +5,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Collapse from "@material-ui/core/Collapse";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
@@ -16,6 +17,8 @@ import ColorizeOutlinedIcon from "@material-ui/icons/ColorizeOutlined";
 import Divider from "@material-ui/core/Divider";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
 import ArrowRightAltOutlinedIcon from "@material-ui/icons/ArrowRightAltOutlined";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -181,6 +184,11 @@ export default function Menu() {
           </ListItemSecondaryAction>
         </ListItem>
       </List>
+     <div className="github">
+      <Link href="https://github.com/malhotra-parul/dashboard" >
+        <GitHubIcon /> Github Repo
+        </Link>
+        </div>
     </div>
   );
 }

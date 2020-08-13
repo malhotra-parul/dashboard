@@ -248,6 +248,16 @@
   }
 }
 
+.github{
+  padding: 20px;
+
+}
+
+.github > a:hover{
+  text-decoration: none;
+  color: rgb(29, 29, 103);
+}
+
 
 
 
