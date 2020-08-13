@@ -6,6 +6,8 @@
 
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template: 60px 20px auto / 270px 15px 12fr 15px;
   /* background: #f7f7fa; */
@@ -239,6 +241,12 @@
   filter: drop-shadow(16px 16px 20px #ddddf0);
 }
 
+
+@media screen and (max-width: 720px){
+  .App{
+    border-right: none;
+  }
+}
 
 
 

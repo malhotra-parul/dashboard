@@ -74,7 +74,7 @@ export default function Menu() {
   };
 
   return (
-    <div>
+    <div style={{ filter: 'drop-shadow(0 0 0.45rem #ddddf0)'}}>
       <List>
         <Divider />
         <ListItem button onClick={handleClick} className={classes.menu}>
