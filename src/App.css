@@ -70,7 +70,7 @@
   width: 90px;
   border-radius: 50%;
   object-fit: scale-down;
-  filter: drop-shadow(0 0 0.75rem #ddddf0);
+  filter: drop-shadow(0 0 0.45rem #ddddf0);
 }
 
 .daily-visitors{

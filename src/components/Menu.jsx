@@ -77,7 +77,7 @@ export default function Menu() {
   };
 
   return (
-    <div style={{ filter: 'drop-shadow(0 0 0.45rem #ddddf0)'}}>
+    <div >
       <List>
         <Divider />
         <ListItem button onClick={handleClick} className={classes.menu}>
@@ -145,7 +145,7 @@ export default function Menu() {
         </ListItem>
         <Divider />
       </List>
-
+      <div style={{ filter: 'drop-shadow(0 0 0.55rem #ddddf0)'}} >
       <List
         component="nav"
         subheader={
@@ -184,6 +184,7 @@ export default function Menu() {
           </ListItemSecondaryAction>
         </ListItem>
       </List>
+      </div>
      <div className="github">
       <Link href="https://github.com/malhotra-parul/dashboard" >
         <GitHubIcon /> Github Repo
